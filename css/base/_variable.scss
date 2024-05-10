@@ -1,0 +1,9 @@
+$grid-breakpoints: (
+  ssm: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl:1920px,
+);
+$gutter-width : 30px;
+$gutter-outside : ($gutter-width / 2);
