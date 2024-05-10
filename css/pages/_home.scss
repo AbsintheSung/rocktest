@@ -261,11 +261,17 @@
         >a{
             color: #FFFFFF;
         }
+        >a:hover{
+            text-decoration:underline;
+        }
     }
     .contact-phone{
         font-size: 20px;
         >a{
             color: #FFFFFF;
+        }
+        >a:hover{
+            text-decoration:underline;
         }
     }
 }

@@ -379,9 +379,15 @@ a {
 .footer-content .contact-email > a {
   color: #FFFFFF;
 }
+.footer-content .contact-email > a:hover {
+  text-decoration: underline;
+}
 .footer-content .contact-phone {
   font-size: 20px;
 }
 .footer-content .contact-phone > a {
   color: #FFFFFF;
+}
+.footer-content .contact-phone > a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
