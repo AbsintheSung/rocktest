@@ -1,7 +1,9 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -94,7 +96,7 @@ a {
 }
 
 .header-background {
-  background-image: url("../../img/banner.png");
+  background-image: url("https://github.com/AbsintheSung/rocktest/blob/main/img/banner.png?raw=true");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -117,6 +119,7 @@ a {
   }
 }
 .header-content .header-title {
+  position: relative;
   font-size: 60px;
   font-weight: 900;
 }
@@ -125,6 +128,15 @@ a {
     font-size: 80px;
     margin-bottom: 32px;
   }
+}
+.header-content .header-title::before {
+  position: absolute;
+  content: "Here’s";
+  font-size: 24px;
+  left: 0;
+  top: -16px;
+  color: #FFFFFF;
+  font-weight: 400;
 }
 .header-content .header-depiction {
   display: none;
@@ -154,6 +166,7 @@ a {
 .about-section .about-title {
   font-size: 32px;
   margin-bottom: 20px;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   .about-section .about-title {
