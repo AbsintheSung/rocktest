@@ -85,9 +85,9 @@ a {
     max-width: 992px;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1950px) {
   .container {
-    max-width: 1920px;
+    max-width: 1950px;
   }
 }
 
