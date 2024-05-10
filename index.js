@@ -177,7 +177,7 @@ function prime(num){
     for(let i=1 ; i<=num ; i++){
         temp.push(i)
     }
-    return temp.filter((item)=> item%2 != 0)
+    return temp.filter((item)=> item%2 != 0).toString();
 }
 console.log(prime(7))
 console.log(prime(15))
