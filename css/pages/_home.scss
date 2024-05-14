@@ -4,26 +4,22 @@
     background-position: center;
     background-size: cover;
 }
-.header-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 154px;
-    padding-bottom: 154px;
-    font-style: italic;
-    color:#FFFFFF;
+.header-content{   
+    padding-top: map-get($header, content-pt-mobile);
+    padding-bottom:map-get($header, content-pb-mobile);
+    color:$primary-color;
+    @include flex-column-center;
     @include Medium{
-        padding-top: 308px;
-        padding-bottom: 308px;
+        padding-top: map-get($header, content-pt-desktop);
+        padding-bottom: map-get($header, content-pt-desktop);
     }
     .header-title{
         position: relative;
-        font-size: 60px;
-        font-weight: 900;
+        font-size: map-get($header, title-fs-mobile);
+        font-weight: map-get($header, title-fw);
         @include Medium{
-            font-size: 80px;
-            margin-bottom: 32px;
+            font-size: map-get($header, title-fs-desktop);
+            margin-bottom: map-get($header, title-mb-desktop);
         }
 
     }
@@ -40,10 +36,9 @@
         display: none;
         @include Medium{
             display: block;
-            font-size: 24px;
-            margin-bottom: 40px;
+            font-size: map-get($header, depiction-fs-desktop);
+            margin-bottom:map-get($header,depiction-mb-desktop);
         }
-      
     }
 }
 .navbar-list{
@@ -56,11 +51,8 @@
 .about-section{
     padding-top: 56px;
     padding-bottom: 56px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-style: italic;
+    text-align: center;
+    // font-style: italic;
     .about-title{
         font-size: 32px;
         margin-bottom: 20px;
@@ -116,16 +108,13 @@
     color:#FFFFFF;
     padding-top: 28px;
     padding-bottom: 28px;
-    font-style: italic;
+    // font-style: italic;
     @include Medium{
         padding-top: 56px;
         padding-bottom: 160px;
     }
     .mybrand-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         .mybrand-title{
             font-size: 36px;
             font-weight: 500;
@@ -151,11 +140,8 @@
     }
 }
 .mybrand-imgbox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
     margin-top: 70px;
+    @include flex-column-center;
     .inside-box{
         display: flex;
         margin-top: 40px;
@@ -166,13 +152,10 @@
 
 //  Other Works 區塊
 .works-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding-top: 56px;
     padding-bottom: 144px;
-    font-style: italic;
+    // font-style: italic;
+    @include flex-column-center;
     .works-title{
         font-size: 36px;
         font-weight: 500;
@@ -243,17 +226,14 @@
     padding-top: 32px;
     padding-bottom: 32px;
     color:#FFFFFF;
-    font-style: italic;
+    // font-style: italic;
     @include Medium{
         padding-top: 64px;
         padding-bottom: 64px;
     }
 }
 .footer-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column-center;
     .footer-title{
         font-size: 64px;
         font-weight: 500;

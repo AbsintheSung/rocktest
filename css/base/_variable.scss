@@ -3,7 +3,26 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl:1950px, //1920 + gutter-width
+  xl:1224px, //1200 + gutter-outside
 );
-$gutter-width : 30px;
+$gutter-width : 24px;
 $gutter-outside : ($gutter-width / 2);
+
+$primary-color:#FFFFFF;
+$secondary-color:#000000;
+
+$header:(
+  "content-pt-mobile" : 154px, //header content區的 上方內間距( 行動裝置版 )
+  "content-pb-mobile" : 154px, //header content區的 下方內間距( 行動裝置版 )
+  "content-pt-desktop" : 308px,//header content區的 上方內間距( 桌機版 )
+  "content-pb-desktop" : 308px,//header content區的 下方內間距( 桌機版 )
+
+  "title-fs-mobile" : 60px, //header title的 文字大小( 行動裝置版 )
+  "title-fw" : 900, //header title的 文字粗細( 行動裝置版，桌機板 )
+  "title-fs-desktop" : 80px, //header title的 文字大小( 桌機版 )
+  "title-mb-desktop" : 32px, //header title的 下方外間距大小( 桌機版 )
+
+  "depiction-fs-desktop" : 24px, //header depiction 的 文字大小( 桌機版 )
+  "depiction-mb-desktop" : 40px, //header depiction 的 下方外間距大小( 桌機版 )
+);
+
