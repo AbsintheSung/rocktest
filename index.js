@@ -122,15 +122,15 @@ console.log(checkPhoneNumber("0877121333"))
     8x4=32
     8x5=40
 */
-function multiplication(num){
+function multiplication8(num){
     let str = ''
     for(let i =1 ; i<= num ;i ++){
         str += `8x${i}=${i*8}\n`
     }
     return str
 }
-console.log(multiplication(3))
-console.log(multiplication(5))
+console.log(multiplication8(3))
+console.log(multiplication8(5))
 
 /*
     第六題
@@ -197,7 +197,8 @@ function obj(num){
     return {
         first:num,
         y:function(){
-           return this.first
+        //    return this.first
+            return num
         }
     }
 }
@@ -220,26 +221,14 @@ console.log(obj(50).y())
 */
 function checkSame(array){
     const a = [1,3,4,6,8];
-    const returnArr = [];
-    let temp =  array.concat(a); //將傳入的跟要核對的陣列做合併
-
-    //利用reduce 計算相同元素數量並以物件鍵值顯示
-    let tempObj =  temp.reduce(function (allNames, name) {
-    if (name in allNames) {
-        allNames[name]++;
-    } else {
-        allNames[name] = 1;
-    }
-    return allNames;
-    }, {});
-   
-    //將 透過 reduce產出的的物件，若對應的key 的 value 比1大的，表示有重複，跑回圈將重複的key取出
-    for (let key in tempObj) {
-        if(tempObj[key] >= 2){
-            returnArr.push(Number(key))
-        }
-    }
-    return returnArr
+    let result = []
+    let temp = new Set([...array])
+    temp.forEach((item)=>{
+      const find = a.find((findItem)=>findItem===item)
+      if(find===undefined) return
+      result.push(find)
+    })
+    return result
 }
 console.log(checkSame([3,4,9]))
 console.log(checkSame([1,2,3,4,5,6,9]))
