@@ -107,9 +107,9 @@ body {
 }
 
 .header-content {
+  color: #FFFFFF;
   padding-top: 154px;
   padding-bottom: 154px;
-  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;

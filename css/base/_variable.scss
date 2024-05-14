@@ -10,6 +10,9 @@ $gutter-outside : ($gutter-width / 2);
 
 $primary-color:#FFFFFF;
 $secondary-color:#000000;
+$display-block:block;
+$display-none:none;
+
 
 $header:(
   "content-pt-mobile" : 154px, //header content區的 上方內間距( 行動裝置版 )
@@ -24,5 +27,8 @@ $header:(
 
   "depiction-fs-desktop" : 24px, //header depiction 的 文字大小( 桌機版 )
   "depiction-mb-desktop" : 40px, //header depiction 的 下方外間距大小( 桌機版 )
+
+  "nav-list-row-gap" : 0px, // nav 間距 ( 各元素上下的間隔 )
+  "nav-list-column-gap" : 16px,  // nav 間距 ( 各元素左右的間隔 )
 );
 

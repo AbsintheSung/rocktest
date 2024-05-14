@@ -5,13 +5,12 @@
     background-size: cover;
 }
 .header-content{   
-    padding-top: map-get($header, content-pt-mobile);
-    padding-bottom:map-get($header, content-pb-mobile);
     color:$primary-color;
+    @include padding-vertical(map-get($header, content-pt-mobile),map-get($header, content-pb-mobile));
     @include flex-column-center;
     @include Medium{
-        padding-top: map-get($header, content-pt-desktop);
-        padding-bottom: map-get($header, content-pt-desktop);
+        @include padding-vertical(map-get($header, content-pt-desktop),map-get($header, content-pt-desktop));
+
     }
     .header-title{
         position: relative;
@@ -43,7 +42,7 @@
 }
 .navbar-list{
     display: flex;
-    gap: 0px 16px;
+    gap: map-get($header,nav-list-row-gap) map-get($header,nav-list-column-gap);
 }
 
 // About 區塊
