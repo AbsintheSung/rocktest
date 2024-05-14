@@ -1,27 +1,26 @@
 @mixin SSmall{
-    @media (min-width: map-get($grid-breakpoints, ssm)){
-      @content
-    }
+  @media (min-width: map-get($grid-breakpoints, ssm)){
+    @content
   }
+}
 
-  @mixin Small{
-    @media (min-width: map-get($grid-breakpoints, sm)){
-        @content;
-    }
+@mixin Small{
+  @media (min-width: map-get($grid-breakpoints, sm)){
+      @content;
   }
-  @mixin Medium{
-    @media (min-width: map-get($grid-breakpoints, md) ){
-        @content;
-    }
+}
+@mixin Medium{
+  @media (min-width: map-get($grid-breakpoints, md) ){
+      @content;
   }
-  @mixin Large{
-    @media (min-width:  map-get($grid-breakpoints, lg) ){
-        @content;
-    }
+}
+@mixin Large{
+  @media (min-width:  map-get($grid-breakpoints, lg) ){
+      @content;
   }
-  @mixin XLarge{
-    @media (min-width:  map-get($grid-breakpoints, xl) ){
-        @content;
-    }
+}
+@mixin XLarge{
+  @media (min-width:  map-get($grid-breakpoints, xl) ){
+      @content;
   }
-  
+}
